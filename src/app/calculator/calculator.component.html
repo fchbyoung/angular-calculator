@@ -1,0 +1,17 @@
+<h1>Awesome Calculator</h1>
+<div>
+  <input type="number" [(ngModel)]="first" />
+  <select [value]="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">x</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" [(ngModel)]="second" />
+  <br><br>
+  <input type="button" value="Thực thi" (click)="calculator()">
+</div>
+
+<div>
+  {{ouput}}
+</div>
